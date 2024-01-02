@@ -1,13 +1,17 @@
-export function logger(msg) {
-  console.log(msg) // !DEBUG
-}
-
-export function printAppTitle() {
-  if (document.title) {
-    console.log(document.title)
-  } else {
-    console.error('title tag not found')
-  }  
+export function initResponsiveMenu() {
+  const btn = document.querySelector('#menu-toggler')
+  const nav = document.querySelector('nav')
+  btn.addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('menu-toggler--opened')
+    nav.classList.toggle('active')
+  })
+  // remove class 
+  window.addEventListener("resize", () => {
+    const meneToogler = document.querySelector('.menu-toggler--opened')
+    if (meneToogler) {
+      meneToogler.classList.remove('menu-toggler--opened')
+    }
+  })
 }
 
 export function setCopyRightYear() {

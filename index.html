@@ -5,14 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <!-- <link rel="stylesheet" href="main.scss"> -->
   </head>
   <body>
     <header>
-      <h1>Vite App</h1>
+      <div class="wrapper">
+        <a class="site-logo" href="/" title="Home">
+          <img src="./img/menu-logo.webp" alt="site-logo__img">
+        </a>
+        <nav class="nav">
+          <ul>
+            <li class="nav__item"><a class="nav__link" href="/">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Our&nbsp;essentials</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Testimony</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="btn-cta">Order&nbsp;now</button>
+        <button id="menu-toggler" class="main-nav__toggle" aria-expanded="false">
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+        </button>
+      </div>
     </header>
     <main>
-    <div>Hello World</div>
     </main>
     <footer>
       &copy; <time class="year" datetime="2024">2024</time>

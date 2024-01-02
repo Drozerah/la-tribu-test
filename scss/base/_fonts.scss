@@ -2,11 +2,57 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-/* shippori-mincho-regular - latin */
+/* avenirbook */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Shippori Mincho';
+  font-display: swap;
+  font-family: "avenirbook";
+  src:
+    url("../../fonts/avenir/avenir_book-webfont.woff2") format("woff2"),
+    url("../../fonts/avenir/avenir_book-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/shippori-mincho-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* avenirheavy */
+@font-face {
+  font-display: swap;
+  font-family: "avenirheavy";
+  src:
+    url("../../fonts/avenir/avenir_heavy-webfont.woff2") format("woff2"),
+    url("../../fonts/avenir/avenir_heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* avenirlight */
+@font-face {
+  font-display: swap;
+  font-family: "avenirlight";
+  src:
+    url("../../fonts/avenir/avenir_light-webfont.woff2") format("woff2"),
+    url("../../fonts/avenir/avenir_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* avenirblack */
+@font-face {
+  font-display: swap;
+  font-family: "avenirblack";
+  src:
+    url("../../fonts/avenir/avenir_black-webfont.woff2") format("woff2"),
+    url("../../fonts/avenir/avenir_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* avenir_regularregular */
+@font-face {
+  font-display: swap;
+  font-family: "avenir_regularregular";
+  src:
+    url("../../fonts/avenir/avenir_regular-webfont.woff2") format("woff2"),
+    url("../../fonts/avenir/avenir_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

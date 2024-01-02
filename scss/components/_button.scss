@@ -1,3 +1,45 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+/* Nav button */
+
+#menu-toggler {
+  display: inline-block;
+  position: relative;
+  height: 22px;
+  min-width: 35px;
+  border: none;
+  top: 10px;
+  transform: translateY(-10px);
+  background-color: transparent;
+}
+
+.main-nav__toggle-line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 10px;
+  left: 0px;
+  display: inline-block;
+  transition: all 0.3s;
+  background-color: #161616;
+  color: #fff;
+}
+
+.main-nav__toggle-line:first-of-type {
+  top: 0;
+}
+.main-nav__toggle-line:nth-of-type(3) {
+  top: 21px;
+}
+.main-nav__toggle.menu-toggler--opened .main-nav__toggle-line:first-of-type {
+  transform: translateY(10px) rotate(135deg);
+}
+.main-nav__toggle.menu-toggler--opened .main-nav__toggle-line {
+  transform: scale(0);
+  transition: 0.3s;
+}
+.main-nav__toggle.menu-toggler--opened .main-nav__toggle-line:nth-of-type(3) {
+  transform: translateY(-11px) rotate(-135deg);
+}

@@ -3,23 +3,19 @@
 // -----------------------------------------------------------------------------
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
+@use "../abstracts/breakpoints" as *;
 // https://sass-lang.com/documentation/breaking-changes/css-vars/
 // #{}
 :root {
   --fs-base: #{$base-font-size}; 
-  --ff-body: "Shippori Mincho", serif;
+  --ff-body: "avenirbook";
   --fw-normal: 400;
   --line-height: 1.55;
 
-  --fs-h1: 5rem;
-  --fs-h2: 3.25rem;
-  --fs-h3: 2.75rem;
-  --fs-h4: 1.75rem;
-
-  --black: #{$black-ligthen};
-  --primary: #{$purple};
-  --secondary: #{$orange};
-  --blue: #{$blue};
+  --clr-dark:#1A1A1A;
+  --clr-white: #FFFFFF;
+  --clr-light-gray: #F4F4F4;
+  --clr-green: #97CB29;
 }
 
 *,
@@ -42,7 +38,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-size: 1.6rem; /* 1.6rem = 16px */
-  font-family: var(--ff-body);
+  font-family: "avenirbook";
   font-weight: var(--fw-normal);
   line-height: var(--line-height);
+  color: var(--clr-dark);
+  background-color: var(--clr-white);
+}
+
+.wrapper{
+  width: 100%;
+  max-width: $large; // 1440px
+  margin: 0 auto;
 }
