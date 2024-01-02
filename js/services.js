@@ -5,7 +5,7 @@ export function initResponsiveMenu() {
     e.currentTarget.classList.toggle('menu-toggler--opened')
     nav.classList.toggle('active')
   })
-  // remove active mene toogler on rize
+  // remove active menu toogler on resize
   window.addEventListener("resize", () => {
     const menuToogler = document.querySelector('.menu-toggler--opened')
     const panel = document.querySelector('.active')
