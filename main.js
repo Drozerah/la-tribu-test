@@ -1,5 +1,6 @@
 import './scss/main.scss'
 
-import { initResponsiveMenu } from './js/services'
+import { initResponsiveMenu, ordering } from './js/services'
 
+ordering()
 initResponsiveMenu()

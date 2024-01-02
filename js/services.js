@@ -16,6 +16,13 @@ export function initResponsiveMenu() {
   })
 }
 
+export function ordering () {
+  const orderingBtn = document.querySelector('.btn-cta')
+  orderingBtn.addEventListener('click', (e) => {
+    alert('Ordering not implemented yet')
+  })
+}
+
 export function setCopyRightYear() {
   const currentYear = new Date().getFullYear()
   const yearElement = document.querySelector('.year')
