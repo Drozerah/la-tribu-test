@@ -1,7 +1,7 @@
 // @use "./abstracts/colors" as *;
 // @use "./abstracts/breakpoints" as *;
 // @use './abstracts/mixins' as *;
-// @use "./base/fonts" as *;
+@use "./base/fonts" as *;
 // @use './base/reset' as *;
 // @use './base/normalize' as *;
 @use "./base/base" as *;

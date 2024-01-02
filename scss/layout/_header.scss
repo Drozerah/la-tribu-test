@@ -10,6 +10,7 @@ header {
   left: 0;
   right: 0;
   .wrapper {
+    font-family: var(--ff-body);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +33,6 @@ header {
           a {
             text-decoration: none;
             font-size: 1.6rem;
-            font-family: var(--ff-body);
             color: var(--clr-dark);
             &:hover {
               text-decoration: underline;
@@ -46,6 +46,7 @@ header {
       color: var(--clr-white);
       border: none;
       height: 35px;
+      font-family: var(--ff-body);
       font-weight: 700;
       border-radius: 5px;
       padding: 8px 10px;
@@ -60,6 +61,9 @@ header {
     }
 
     @media screen and (max-width: 450px) {
+      .site-logo {
+        margin-right: 1.5rem;
+      }
       #menu-toggler {
         display: inline-block;
         margin-left: 20px;
