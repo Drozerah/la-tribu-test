@@ -1,16 +1,28 @@
 export function initResponsiveMenu() {
+
   const btn = document.querySelector('#menu-toggler')
   const nav = document.querySelector('nav')
+
+  // handle click event
   btn.addEventListener('click', (e) => {
-    e.currentTarget.classList.toggle('menu-toggler--opened')
+    const currentTarget = e.currentTarget
+    // toogle class 
+    currentTarget.classList.toggle('menu-toggler--opened')
+    // toogle aria attribute
+    const expanded = currentTarget.getAttribute('aria-expanded') === 'true'
+    currentTarget.setAttribute('aria-expanded', String(!expanded))
+    // add active class
     nav.classList.toggle('active')
   })
-  // remove active menu toogler on resize
+
+  // handle window resize event
   window.addEventListener("resize", () => {
     const menuToogler = document.querySelector('.menu-toggler--opened')
     const panel = document.querySelector('.active')
+    // reset #menu-toggler state
     if (menuToogler) {
       menuToogler.classList.remove('menu-toggler--opened')
+      menuToogler.setAttribute('aria-expanded',"false")
       panel.classList.remove('active')
     }
   })
