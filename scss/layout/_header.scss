@@ -88,7 +88,16 @@ header {
           flex-direction: column;
           gap: 2rem;
           margin-top: 2rem;
+          border-radius: 5px;
           li {
+            width: 100%;
+            padding: 1rem;
+            &:hover{
+              background-color: var(--clr-white);
+              a{
+                text-decoration: none;
+              }
+            }
             a {
               width: 100%;
               text-align: center;
