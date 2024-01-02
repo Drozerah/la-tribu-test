@@ -21,7 +21,7 @@ gulp.task('webp', (done) => {
   .pipe(webp({
     preset: 'photo'
   }))
-  .pipe(gulp.dest('./img/'))
+  .pipe(gulp.dest('./public/img'))
   done()
 })
 
