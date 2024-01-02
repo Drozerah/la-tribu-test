@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/mixins' as *;
+
+header{
+
+  background-color: var(--blue);
+  padding: 20px;
+  h1{
+    color: var(--primary); // var
+    font-size: 2.5rem;
+  }
+  
+  // @media screen and (min-width:$tablet) {
+  //   h1{
+  //     color:var(--black); // var
+  //   }
+  // }
+
+}
+// mixin
+// @include media_screen_min_width(small){
+
+//   header{
+//     :root{
+//       font-size: 5px;
+//     }
+
+//     h1{
+//       color: green; // var
+//       font-size: 2.8rem;
+//     }
+//   }
+// }

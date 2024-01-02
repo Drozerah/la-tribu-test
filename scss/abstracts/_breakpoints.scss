@@ -1,0 +1,17 @@
+@use 'sass:map';
+// --------------------------------------------------------------------------------
+// This file contains all application-wide responsive breackpoints Sass variables.
+// --------------------------------------------------------------------------------
+$tablet: 600px;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  // xsmall:  0,
+  small:   576px,
+  medium:  768px,
+  large:   992px,
+  xlarge:  1200px,
+  xxlarge: 1400px
+);

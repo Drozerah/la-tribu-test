@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use 'breakpoints' as *;
+// --------------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// --------------------------------------------------------------------------------
+
+// MEDIA QUERIES MIXINS
+// ---------------------------------------------------------------------------------
+
+// sreen and min-width
+// -------------------
+// @{dep} _breakpoints.scss
+// @{type}  sass:mixin with dynamique @content import
+// @{param} $key - where $key eq to 'small', 'medium, 'large' values in $breakpoints
+// @{usage}
+// @include media_screen_min_width(small){
+//   color: var(--primary); // var
+//   border: 1px solid var(--primary);
+// }
+@mixin media_screen_min_width($key) {
+  // @{var} $size - mapped to $breakpoints keys/values sass:map Object
+  $size: map.get($breakpoints, $key);
+  @media screen and (min-width: $size){
+    // inject whatever needed rules as content
+    @content;
+  }
+}
