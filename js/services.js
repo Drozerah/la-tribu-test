@@ -5,11 +5,13 @@ export function initResponsiveMenu() {
     e.currentTarget.classList.toggle('menu-toggler--opened')
     nav.classList.toggle('active')
   })
-  // remove class 
+  // remove active mene toogler on rize
   window.addEventListener("resize", () => {
-    const meneToogler = document.querySelector('.menu-toggler--opened')
-    if (meneToogler) {
-      meneToogler.classList.remove('menu-toggler--opened')
+    const menuToogler = document.querySelector('.menu-toggler--opened')
+    const panel = document.querySelector('.active')
+    if (menuToogler) {
+      menuToogler.classList.remove('menu-toggler--opened')
+      panel.classList.remove('active')
     }
   })
 }
