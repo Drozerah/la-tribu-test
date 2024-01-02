@@ -33,6 +33,10 @@ html{
   font-size: var(--fs-base);
 }
 
+image{
+  display: block;
+}
+
 body {
   display: flex;
   flex-direction: column;

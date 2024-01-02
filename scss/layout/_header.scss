@@ -55,9 +55,6 @@ header {
     }
 
     #menu-toggler {
-      top: 17px;
-      width: 34px;
-      height: 34px;
       display: none;
     }
 
@@ -81,18 +78,21 @@ header {
         width: 100vw;
         transition: transform 0.5s ease-in;
         margin-left: 0px;
+        background-color: var(--clr-light-gray);
         &.active {
           transform: translateX(-100vw);
+          z-index: 99;
         }
         ul {
           padding: 20px;
           flex-direction: column;
-          gap: 10px;
+          gap: 2rem;
+          margin-top: 2rem;
           li {
             a {
               width: 100%;
               text-align: center;
-              font-size: 1.8rem;
+              font-size: 1.9rem;
             }
           }
         }
